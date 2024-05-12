@@ -1,0 +1,10 @@
+streamlit
+streamlit-chat
+openai
+python-dotenv
+dotenv
+langchain_openai 
+langchain_community 
+langchain 
+pymysql 
+chromadb
