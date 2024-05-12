@@ -9,8 +9,6 @@ db_password = st.secrets["db_password"]
 db_host = st.secrets["db_host"]
 db_name = st.secrets["db_name"]
 
-st.write("DB username:", st.secrets["db_user"])
-st.write("DB password:", st.secrets["db_password"])
 
 #OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 #LANGCHAIN_TRACING_V2 = os.getenv("LANGCHAIN_TRACING_V2")
