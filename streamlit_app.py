@@ -90,7 +90,7 @@ Answer: """
 # Set OpenAI API key from Streamlit secrets
 api_key = os.getenv("OPENAI_API_KEY")
 print(f"=*********===========> {api_key}")
-client = OpenAI(api_key=api_key)
+client = OpenAI()
 
 # Set a default model
 if "openai_model" not in st.session_state:
