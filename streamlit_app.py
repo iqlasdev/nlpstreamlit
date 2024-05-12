@@ -4,14 +4,21 @@ import os
 from dotenv import load_dotenv
 load_dotenv()
 
-db_user = os.getenv("db_user")
-db_password = os.getenv("db_password")
-db_host = os.getenv("db_host")
-db_name = os.getenv("db_name")
+db_user = st.secrets["db_user"]
+db_password = st.secrets["db_password"]
+db_host = st.secrets["db_host"]
+db_name = st.secrets["db_name"]
 
-OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
-LANGCHAIN_TRACING_V2 = os.getenv("LANGCHAIN_TRACING_V2")
-LANGCHAIN_API_KEY = os.getenv("LANGCHAIN_API_KEY")
+st.write("DB username:", st.secrets["db_user"])
+st.write("DB password:", st.secrets["db_password"])
+
+#OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
+#LANGCHAIN_TRACING_V2 = os.getenv("LANGCHAIN_TRACING_V2")
+#LANGCHAIN_API_KEY = os.getenv("LANGCHAIN_API_KEY")
+
+OPENAI_API_KEY = st.secrets["OPENAI_API_KEY"]
+LANGCHAIN_TRACING_V2 = st.secrets["LANGCHAIN_TRACING_V2"]
+LANGCHAIN_API_KEY = st.secrets["LANGCHAIN_API_KEY"]
 
 if OPENAI_API_KEY:
     print("API Key is:", OPENAI_API_KEY)
