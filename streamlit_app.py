@@ -29,8 +29,6 @@ from langchain_core.output_parsers import StrOutputParser
 from langchain_core.runnables import RunnablePassthrough
 from langchain_openai import ChatOpenAI
 
-from table_details import table_chain as select_table
-
 
 
 
